@@ -4,11 +4,17 @@ The files in this repository were used to configure the network depicted below.
 
 ![](Diagrams/Cloud_Security_Diagram_ELK.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yaml and config file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [ELK Setup](Ansible/ELK/elk_playbook.yml)
+  - [Docker Setup](Ansible/Docker/ansible_playbooks.yml)
   - [ELK Configuration](Ansible/ELK/ansible.cfg)
+  - [ELK Setup](Ansible/ELK/elk_playbook.yml)
   - [Hosts](Ansible/ELK/hosts)
+  - [Filebeat Configuration](Ansible/Filebeat/filebeat-config.yml)
+  - [Filebeat Playbook](Ansible/Filebeat/filebeat-playbook.yml)
+  - [Metricbeat Configuration](Ansible/Metricbeat/metricbeat-config.yml)
+  - [Metricbeat Playbook](Ansible/Metricbeat/metricbeat-playbook.yml)
+
 
 This document contains the following details:
 - Description of the Topologu
@@ -23,7 +29,7 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly effective, in addition to restricting access to the network. Load balancers provide the off-loading function to help defend against distributed denial-of-service (DDoS) attacks. The advantage of a jump box is to provide a single point of access into an infrastructure as well as keeping the VMs from being exposed by a public IP address. The jump box also provides control over your virtual machines providing access to log monitoring, access restriction, etc. 
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
