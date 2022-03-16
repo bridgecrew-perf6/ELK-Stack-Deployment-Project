@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - ![ ELK Setup](Ansible/ELK/elk_playbook.yml)
   - ![ ELK Configuration](Ansible/ELK/ansible.cfg)
-  - ![ Hosts](Ansible/ELK/hosts)
+  - ![Hosts](https://github.com/zaidzuhair/ELK-Stack-Deployment-Project/blob/main/Ansible/ELK/hosts)
 
 This document contains the following details:
 - Description of the Topologu
